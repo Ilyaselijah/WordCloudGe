@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Simple Word Cloud Generator</title>
+
+    <!-- stylesheets-->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- js librairies-->
+    <script type="text/javascript" src="js/librairies/d3.v3.js"></script>
+    <script type="text/javascript" src="js/librairies/papaparse.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- scripts-->
+    <script type="text/javascript" src="js/scripts/cloudgen.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <!--Titre-->
+        <div class="row">
+            <h1>Simple Word Cloud Generator</h1>
+        </div>
+
+        <!--Prévisualisation-->
+        <div class="row">
+            <div id="vis">
+                <svg></svg>
+            </div>
+        </div>
+
+        <!--CSV LOADER-->
+        <div class="row">
+            <div class="three columns">
+
+                <input type="file" id="files" class="form-control" />
+            </div>
+            <div class="three columns">
+                <button type="submit" id="submit-file" class="btn btn-primary">Upload File</button>
+            </div>
+            <div class="six columns" id="parsed_csv_list">
+            </div>
+        </div>
+
+        <!--Parametrage-->
+        <div class="row">
+            <!--géométries, couleurs et fontes-->
+            <div class="four columns">
+            </div>
+            <!-- angles et calibre-->
+            <div class="four columns">
+            </div>
+            <!-- Downloader-->
+            <div class="four columns">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+
+
+    </script>
+
+</body>
+</html>
+<script type="text/javascript" src="js/scripts/csvload.js"></script>
